@@ -1,3 +1,56 @@
-body{
+#div1{
+    width: 100%;
+    overflow: auto;
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#div2,#div3{
+    width: 100%;
+    float:none;
+    overflow: auto;
+
+}
+#div4,#div5{
+    width: 50%;
+    float: left;
+    overflow: auto;
+}
+#div6{
+    float: right;
+    align-items: center;
+}
+#div7,#div8{
+    float: left;
+    padding-left: 5%;
+   
+}
+#div6{
+    padding-right: 10%;
+}
+#div2{
+    background-color: aquamarine;
+    
+    height: fit-content;
+    border :1px solid black;
+    border-radius: 4px;
+    
+    
+}
+#div3{
+    background-color: aqua;
+    align-items: center;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#div9{
+    background-color: grey;
+    font-size: 60px;
+    border: 1px solid black;
+    border-radius: 4px;
+    
 }

@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+   <div id="div1">
+    <div id="div2">
+        <div id="div4">
+            <div id="div6"><button onclick='ColorFlip()'>Color-flip</button></div>
+        </div>
+        <div id="div5">
+            <div id="div7"><button onclick='simple()'>Simple</button></div>
+            <div id="div8"><button onclick='hex()'>Hex</button></div>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="div9">Background:#001111</div>
+        <div style="align-items: center;">
+        <button onclick="click1()">Change</button>
+        </div>
+    </div>
+   </div>
+    <script>
+        var arr;
+       function ColorFlip(){
+         arr=['green', 'red'];
+        // click(arr);
+       }
+
+       function simple(){
+         arr=['violet','indigo', 'blue', 'green', 'yellow', 'orange', 'red'];
+        // click(arr);
+       }
+
+       function hex(){
+          arr=['#ffffff', '#111111', '#222222', '#333333', '#444444', '#555555', '#666666'];
+        //  click(arr);
+       }
+
+       function click1(){
+        const x=arr[(Math.floor(Math.random()*arr.length))];
+        const result = document.getElementById('div3');
+        result.style.backgroundColor=x;
+        document.getElementById('div9').innerText='Background color : '+x;
+       }
+    </script>
 </body>
 </html>
